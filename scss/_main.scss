@@ -1,0 +1,544 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background: url('images/bg-pattern-intro.svg'),
+    linear-gradient($faint-red, $dark-red);
+  background-size: 250%;
+  background-position: 40% 35%;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 4.5rem;
+  @include respond-desktop {
+    background-size: 120%;
+  }
+
+  /*NAV CONTAINER*/
+  .nav-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.5rem 0.2rem 4.5rem 0.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .logo-img {
+      width: 80%;
+    }
+    .hamburger-close {
+      @include respond-desktop {
+        display: none;
+      }
+      @include respond-tablet {
+        display: none;
+      }
+    }
+  }
+
+  /*NAV LIST*/
+  .nav-list {
+    position: absolute;
+    top: -100%;
+    left: 5%;
+    width: 90%;
+    background: #fff;
+    border-radius: 0.4rem;
+    box-shadow: 0px 20px 35px 5px #444;
+    transition: top 250ms ease-out 80ms;
+    @include respond-tablet {
+      position: initial;
+      transform: translate(10%, -270%);
+      background: none;
+      box-shadow: none;
+      height: 5vh;
+    }
+    @include respond-large {
+      position: initial;
+      transform: translate(10%, -200%);
+      background: none;
+      box-shadow: none;
+      height: 5vh;
+    }
+    @include respond-desktop {
+      position: initial;
+      transform: translate(10%, -465%);
+      background: none;
+      box-shadow: none;
+      height: 5vh;
+    }
+
+    .nav-list-container {
+      padding: 1.5rem 0 2rem 0;
+      width: 80%;
+      margin: 0 auto;
+      @include respond-tablet {
+        display: flex;
+        flex-direction: row;
+      }
+      @include respond-desktop {
+        display: flex;
+        flex-direction: row;
+      }
+
+      div {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0.6rem;
+        @include respond-desktop {
+          margin: 0 0;
+        }
+      }
+
+      button {
+        font-size: 1.3rem;
+        background: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        @include respond-tablet {
+          color: #fff;
+          background: none;
+          font-size: 1.2rem;
+        }
+        @include respond-desktop {
+          color: #fff;
+          background: none;
+          font-size: 1.2rem;
+        }
+
+        img {
+          transition: all 300ms ease-out 70ms;
+        }
+      }
+
+      .ul-div {
+        display: none;
+        width: 100%;
+        background: $light-grey;
+        border-radius: 0.3rem;
+        @include respond-tablet {
+          width: 10rem;
+          position: relative;
+          left: -6rem;
+          top: 2.5rem;
+          background: #fff;
+        }
+        @include respond-large {
+          width: 10rem;
+          position: relative;
+          left: -6rem;
+          top: 2.5rem;
+          background: #fff;
+        }
+        @include respond-desktop {
+          width: 10rem;
+          position: relative;
+          left: -8rem;
+          top: 2.5rem;
+          background: #fff;
+        }
+        ul {
+          width: fit-content;
+          margin: 0 auto;
+          background: $light-grey;
+          @include respond-tablet {
+            margin: 0 auto;
+            background: #fff;
+          }
+          @include respond-large {
+            margin: 0 auto;
+            background: #fff;
+          }
+          @include respond-desktop {
+            margin: 0 auto;
+            background: #fff;
+          }
+          li {
+            list-style: none;
+            font-size: 1.2rem;
+            padding: 0.4rem 0;
+            color: $grey;
+            transition: all 150ms ease-out 20ms;
+            @include respond-tablet {
+              padding: 0.15rem 0;
+              font-size: 0.95rem;
+              &:hover {
+                cursor: pointer;
+                color: #000;
+                font-weight: 600;
+              }
+            }
+            @include respond-large {
+              padding: 0.15rem 0;
+              font-size: 1rem;
+            }
+            @include respond-desktop {
+              padding: 0.15rem 0;
+              font-size: 0.85rem;
+            }
+          }
+        }
+      }
+      hr {
+        transform: translateY(1.5rem);
+        @include respond-tablet {
+          display: none;
+        }
+        @include respond-desktop {
+          display: none;
+        }
+      }
+
+      .login-signup {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1.85rem;
+        @include respond-tablet {
+          flex-direction: row;
+          transform: translate(40%, -48.5%);
+        }
+        @include respond-desktop {
+          flex-direction: row;
+          transform: translate(200%, -58.5%);
+        }
+
+        .sign-up {
+          background: linear-gradient(90deg, $faint-red, $dark-red);
+          padding: 0.45rem 1.7rem;
+          border-radius: 2.5rem;
+          color: #fff;
+          @include respond-tablet {
+            background: #fff;
+            color: $dark-red;
+          }
+          @include respond-desktop {
+            background: #fff;
+            color: $dark-red;
+          }
+        }
+      }
+    }
+  }
+
+  .header {
+    width: 100%;
+
+    .header-lg-text {
+      color: #fff;
+      font-size: 2.25rem;
+      width: 100%;
+      padding: 0.5rem 0;
+
+      .lg-text-wrapper {
+        @include respond-tablet {
+          width: fit-content;
+          margin: 0 auto;
+        }
+        @include respond-desktop {
+          width: fit-content;
+          margin: 0 auto;
+        }
+        p {
+          width: fit-content;
+          margin: 0 auto;
+          @include respond-tablet {
+            display: inline-block;
+          }
+          @include respond-desktop {
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .header-sm-text {
+      color: #fff;
+      font-size: 1.3rem;
+      width: 100%;
+      padding: 0.5rem 0;
+
+      .sm-text-wrapper {
+        @include respond-desktop {
+          width: fit-content;
+          margin: 0 auto;
+        }
+        p {
+          width: fit-content;
+          margin: 0 auto;
+          @include respond-desktop {
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .CTA {
+      width: fit-content;
+      padding: 2.5rem 0 8.5rem 0;
+      margin: 0 auto;
+      //transform: translateY(-7.5rem);
+
+      button {
+        padding: 0.65rem 1.2rem;
+        border-radius: 1.5rem;
+        font-size: 1rem;
+        font-weight: 700;
+        border: 1px solid #fff;
+        outline: none;
+        transition: all 150ms ease-out 20ms;
+      }
+
+      .start {
+        font-size: 1.15rem;
+        color: $red;
+        margin-right: 0.2rem;
+        @include respond-tablet {
+          &:hover {
+            cursor: pointer;
+            background: $light-red;
+            color: #fff;
+            border: none;
+          }
+        }
+      }
+      .learn {
+        font-size: 1.15rem;
+        color: #fff;
+        background: none;
+        margin-left: 0.2rem;
+        @include respond-tablet {
+          &:hover {
+            cursor: pointer;
+            background: #fff;
+            color: $red;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* MAIN */
+main {
+  padding: 3.2rem 0 1rem 0;
+  // Editor section
+  .editor-container {
+    width: 100%;
+    padding: 1.5rem 0 14rem 0;
+    @include respond-large {
+      padding: 0;
+    }
+    .editor-header {
+      width: fit-content;
+      margin: 0 auto;
+      h2 {
+        color: $dark-blue;
+        font-size: 1.65rem;
+      }
+    }
+    .editor-container-inner {
+      @include respond-large {
+        padding: 1.2rem 0 0 3rem;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 5%;
+      }
+      .editor-image {
+        height: 50vh;
+        width: 100%;
+        margin: 2.5rem auto 1.5rem auto;
+        background: url('images/illustration-editor-mobile.svg');
+        background-repeat: no-repeat;
+        transform: translateX(-2.5%);
+        @include respond-large {
+          height: 100vh;
+          background-size: 120%;
+          transform: translateY(-10%);
+        }
+      }
+      .text-content {
+        width: 100%;
+        h3 {
+          width: 60%;
+          margin: 0 auto;
+          color: $dark-blue;
+          font-size: 1.55rem;
+          padding-bottom: 0.8rem;
+          @include respond-large {
+            width: 100%;
+            padding: 1.12rem 0;
+          }
+        }
+        p {
+          font-size: 1.15rem;
+          line-height: 1.85rem;
+          @include respond-large {
+            font-size: 1.15rem;
+          }
+        }
+        .text-1,
+        .text-2 {
+          width: 90%;
+          margin: 0 auto;
+          padding: 1.2rem 0;
+        }
+      }
+    }
+  }
+
+  //Phones section
+  .phones-container {
+    width: 100%;
+    padding: 0;
+    background: url('images/bg-pattern-circles.svg'), $blueish-grey;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 0 6rem 0 6rem;
+    @include respond-large {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 0 3.5rem;
+      background-size: 40%;
+      max-height: 60vh;
+    }
+    .phones-image {
+      width: 100%;
+      transform: translateY(-10rem);
+      @include respond-large {
+        transform: none;
+      }
+      img {
+        width: 100%;
+        @include respond-large {
+          width: 70%;
+          height: 120%;
+        }
+      }
+    }
+    .text-content {
+      width: 100%;
+      transform: translateY(-7.5rem);
+      @include respond-large {
+        transform: none;
+        align-self: center;
+      }
+      .phones-header {
+        width: 80%;
+        padding: 0.3rem 0 1.2rem 0.64rem;
+        margin: 0 auto;
+        @include respond-large {
+          margin: 0;
+          padding: 1rem 0;
+        }
+        h1 {
+          color: #fff;
+        }
+      }
+      .text-body {
+        width: 90%;
+        margin: 0 auto;
+        @include respond-large {
+          margin: 0;
+        }
+        p {
+          color: #fff;
+          font-size: 1.15rem;
+          line-height: 2.0rem;
+        }
+      }
+    }
+  }
+}
+
+//Laptop section
+.laptop-container {
+  width: 100%;
+  padding: 4rem 0 1rem 0;
+  @include respond-large {
+    padding: 5rem 2rem 0 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .laptop-image {
+    width: 100%;
+    @include respond-large {
+      width: 350%;
+      transform: translateX(-10rem);
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .text-content {
+    width: 90%;
+    margin: 0 auto;
+    @include respond-large {
+      width: 300%;
+      margin: 0;
+      transform: translateX(-3rem);
+    }
+    div {
+      padding: 1.25rem 0;
+      h2 {
+        font-size: 1.55rem;
+        color: $dark-blue;
+        width: 70%;
+        margin: 0 auto 1rem auto;
+        @include respond-large {
+          margin: 0 0 1rem 0;
+          width: fit-content;
+        }
+      }
+      p {
+        font-size: 1.15rem;
+        line-height: 1.65rem;
+        @include respond-large {
+          font-size: 1.12rem;
+        }
+      }
+    }
+  }
+}
+
+//Footer
+.footer-container {
+  width: 100%;
+  height: fit-content;
+  padding: 2rem 0;
+  background: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-top-right-radius: 6rem;
+  @include respond-tablet {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 0;
+    justify-content: space-around;
+  }
+  div {
+    width: fit-content;
+    margin: 1.2rem auto;
+    display: flex;
+    flex-direction: column;
+    h3 {
+      color: #fff;
+      padding: 0.65rem 0;
+    }
+    a {
+      text-decoration: none;
+      color: $light-grey;
+      font-size: 1.2rem;
+      padding: 0.2rem 0;
+      @include respond-large {
+        font-size: 1rem;
+      }
+    }
+  }
+}

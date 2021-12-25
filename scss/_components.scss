@@ -1,0 +1,39 @@
+/*COLORS*/
+
+//CTA text
+$red: hsl(356, 100%, 66%);
+//CTA hover-bg
+$light-red: hsl(355, 100%, 74%);
+//Headings
+$dark-blue: hsl(208, 49%, 24%);
+//footer text
+$light-grey: hsl(240, 2%, 79%);
+//body copy
+$grey: hsl(207, 13%, 34%);
+//footer bg
+$black: hsl(240, 10%, 16%);
+//bg gradient -- Intro/CTA (mobile nav)
+$faint-red: hsl(13, 100%, 72%);
+$dark-red: hsl(353, 100%, 62%);
+// bg gradient -- body
+$dark-grey: hsl(237, 17%, 21%);
+$blueish-grey: hsl(237, 23%, 32%);
+
+/*MEDIA QUERRIES*/
+@mixin respond-tablet {
+  @media (min-width: 750px) {
+    @content;
+  }
+}
+
+@mixin respond-large {
+  @media (min-width: 790px) {
+    @content;
+  }
+}
+
+@mixin respond-desktop {
+    @media (min-width: 1026px) {
+      @content;
+    }
+}
