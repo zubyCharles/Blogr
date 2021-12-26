@@ -323,7 +323,8 @@ nav {
 
       .start {
         font-size: 1.15rem;
-        color: #fff;
+        background: #fff;
+        color: $red;
         margin-right: 0.2rem;
           &:hover {
             cursor: pointer;

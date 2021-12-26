@@ -372,7 +372,8 @@ nav .header .CTA button {
 }
 nav .header .CTA .start {
   font-size: 1.15rem;
-  color: #fff;
+  background: #fff;
+  color: #ff525d;
   margin-right: 0.2rem;
 }
 nav .header .CTA .start:hover {
