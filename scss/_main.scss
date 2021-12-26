@@ -233,6 +233,7 @@ nav {
           padding: 0.45rem 1.7rem;
           border-radius: 2.5rem;
           color: #fff;
+          transition: all 150ms ease-out 20ms;
           &:hover {
             cursor: pointer;
             background: $light-red;
