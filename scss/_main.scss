@@ -1,8 +1,30 @@
 * {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Ubuntu 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.overpass {
+  font-family: Overpass;
+}
+.ubuntu {
+  font-family: Ubuntu;
+}
+
+h1,
+h2,
+h3,
+button {
+  font-family: Overpass;
+  font-weight: 400;
+}
+h1,h2,h3 {
+  font-weight: 700;
+}
+p,
+a {
+  font-family: Ubuntu;
 }
 
 nav {
@@ -211,6 +233,12 @@ nav {
           padding: 0.45rem 1.7rem;
           border-radius: 2.5rem;
           color: #fff;
+          &:hover {
+            cursor: pointer;
+            background: $light-red;
+            color: #fff;
+            border: none;
+        }
           @include respond-tablet {
             background: #fff;
             color: $dark-red;
@@ -296,13 +324,11 @@ nav {
         font-size: 1.15rem;
         color: $red;
         margin-right: 0.2rem;
-        @include respond-tablet {
           &:hover {
             cursor: pointer;
             background: $light-red;
             color: #fff;
             border: none;
-          }
         }
       }
       .learn {
@@ -310,13 +336,11 @@ nav {
         color: #fff;
         background: none;
         margin-left: 0.2rem;
-        @include respond-tablet {
           &:hover {
             cursor: pointer;
             background: #fff;
             color: $red;
             border: none;
-          }
         }
       }
     }
@@ -449,7 +473,7 @@ main {
         p {
           color: #fff;
           font-size: 1.15rem;
-          line-height: 2.0rem;
+          line-height: 2rem;
         }
       }
     }

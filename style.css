@@ -1,10 +1,38 @@
+/*FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 /*COLORS*/
 /*MEDIA QUERRIES*/
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Ubuntu "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.overpass {
+  font-family: Overpass;
+}
+
+.ubuntu {
+  font-family: Ubuntu;
+}
+
+h1,
+h2,
+h3,
+button {
+  font-family: Overpass;
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+p,
+a {
+  font-family: Ubuntu;
 }
 
 nav {
@@ -253,6 +281,12 @@ nav .nav-list .nav-list-container .login-signup .sign-up {
   border-radius: 2.5rem;
   color: #fff;
 }
+nav .nav-list .nav-list-container .login-signup .sign-up:hover {
+  cursor: pointer;
+  background: #ff7a85;
+  color: #fff;
+  border: none;
+}
 @media (min-width: 750px) {
   nav .nav-list .nav-list-container .login-signup .sign-up {
     background: #fff;
@@ -340,13 +374,11 @@ nav .header .CTA .start {
   color: #ff525d;
   margin-right: 0.2rem;
 }
-@media (min-width: 750px) {
-  nav .header .CTA .start:hover {
-    cursor: pointer;
-    background: #ff7a85;
-    color: #fff;
-    border: none;
-  }
+nav .header .CTA .start:hover {
+  cursor: pointer;
+  background: #ff7a85;
+  color: #fff;
+  border: none;
 }
 nav .header .CTA .learn {
   font-size: 1.15rem;
@@ -354,13 +386,11 @@ nav .header .CTA .learn {
   background: none;
   margin-left: 0.2rem;
 }
-@media (min-width: 750px) {
-  nav .header .CTA .learn:hover {
-    cursor: pointer;
-    background: #fff;
-    color: #ff525d;
-    border: none;
-  }
+nav .header .CTA .learn:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #ff525d;
+  border: none;
 }
 
 /* MAIN */
