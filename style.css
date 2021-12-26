@@ -280,6 +280,7 @@ nav .nav-list .nav-list-container .login-signup .sign-up {
   padding: 0.45rem 1.7rem;
   border-radius: 2.5rem;
   color: #fff;
+  transition: all 150ms ease-out 20ms;
 }
 nav .nav-list .nav-list-container .login-signup .sign-up:hover {
   cursor: pointer;
@@ -371,7 +372,7 @@ nav .header .CTA button {
 }
 nav .header .CTA .start {
   font-size: 1.15rem;
-  color: #ff525d;
+  color: #fff;
   margin-right: 0.2rem;
 }
 nav .header .CTA .start:hover {
