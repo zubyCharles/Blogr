@@ -25,6 +25,7 @@ h1,h2,h3 {
 p,
 a {
   font-family: Ubuntu;
+  font-weight: 400;
 }
 
 nav {
@@ -403,6 +404,7 @@ main {
         p {
           font-size: 1.15rem;
           line-height: 1.85rem;
+          color: $grey;
           @include respond-large {
             font-size: 1.15rem;
           }
@@ -411,7 +413,7 @@ main {
         .text-2 {
           width: 90%;
           margin: 0 auto;
-          padding: 1.2rem 0;
+          padding: 1.6rem 0;
         }
       }
     }
@@ -510,7 +512,7 @@ main {
       transform: translateX(-3rem);
     }
     div {
-      padding: 1.25rem 0;
+      padding: 1.65rem 0;
       h2 {
         font-size: 1.55rem;
         color: $dark-blue;
@@ -524,6 +526,7 @@ main {
       p {
         font-size: 1.15rem;
         line-height: 1.65rem;
+        color: $grey;
         @include respond-large {
           font-size: 1.12rem;
         }

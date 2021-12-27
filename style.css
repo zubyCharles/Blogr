@@ -33,6 +33,7 @@ h1, h2, h3 {
 p,
 a {
   font-family: Ubuntu;
+  font-weight: 400;
 }
 
 nav {
@@ -458,6 +459,7 @@ main .editor-container .editor-container-inner .text-content h3 {
 main .editor-container .editor-container-inner .text-content p {
   font-size: 1.15rem;
   line-height: 1.85rem;
+  color: #4b5862;
 }
 @media (min-width: 790px) {
   main .editor-container .editor-container-inner .text-content p {
@@ -468,7 +470,7 @@ main .editor-container .editor-container-inner .text-content .text-1,
 main .editor-container .editor-container-inner .text-content .text-2 {
   width: 90%;
   margin: 0 auto;
-  padding: 1.2rem 0;
+  padding: 1.6rem 0;
 }
 main .phones-container {
   width: 100%;
@@ -580,7 +582,7 @@ main .phones-container .text-content .text-body p {
   }
 }
 .laptop-container .text-content div {
-  padding: 1.25rem 0;
+  padding: 1.65rem 0;
 }
 .laptop-container .text-content div h2 {
   font-size: 1.55rem;
@@ -597,6 +599,7 @@ main .phones-container .text-content .text-body p {
 .laptop-container .text-content div p {
   font-size: 1.15rem;
   line-height: 1.65rem;
+  color: #4b5862;
 }
 @media (min-width: 790px) {
   .laptop-container .text-content div p {
